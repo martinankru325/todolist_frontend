@@ -1,0 +1,65 @@
+@use 'app/styles/variables' as *;
+@use 'app/styles/typography' as *;
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  background-color: $color-bg-card;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__id {
+    @include text-md;
+    color: $color-text-secondary;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 0;
+  }
+
+  &__name {
+    @include h1;
+    margin: 0 0 10px 0;
+  }
+
+  &__date {
+    @include text-md;
+    position: absolute;
+    right: 20px;
+    top: 51px;
+    display: flex;
+    flex-direction: column;
+
+    color: $color-text-secondary;
+  }
+
+  &__help {
+    @include text-md;
+    margin-bottom: 36px;
+    max-width: 320px;
+
+    color: $color-text-secondary;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__btn {
+    width: unset;
+  }
+}

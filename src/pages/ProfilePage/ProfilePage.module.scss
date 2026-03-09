@@ -1,0 +1,11 @@
+@use 'app/styles/typography' as *;
+
+.profile {
+  padding: 40px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

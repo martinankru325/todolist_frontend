@@ -1,0 +1,14 @@
+.login {
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}

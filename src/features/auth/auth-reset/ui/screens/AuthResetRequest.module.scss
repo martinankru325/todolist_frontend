@@ -1,0 +1,64 @@
+@use 'app/styles/variables' as *;
+@use 'app/styles/typography' as *;
+@use 'app/styles/mixins' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+
+  @include respond-to(sm) {
+    padding: 40px 32px;
+  }
+
+  &__header {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 28px;
+
+    @include respond-to(lg) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__title {
+    @include h1;
+
+    margin: 0;
+    margin-bottom: 16px;
+    color: $color-text-primary;
+
+    @include respond-to(lg) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__descr {
+    @include text-lg;
+
+    color: $color-text-primary;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    margin: 0;
+
+    @include respond-to(lg) {
+    }
+  }
+
+  &__link {
+    @include text-md;
+    @include text-button;
+
+    text-align: center;
+  }
+}
